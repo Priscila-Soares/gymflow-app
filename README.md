@@ -37,11 +37,16 @@ O frontend consome a API REST desenvolvida em Spring Boot, responsável pelas re
 
 ## Estrutura do Projeto
 
+
 gymflow-app
-backend → Spring Boot
-frontend → Angular
+⬇
+backend → aplicação Spring Boot
+⬇
+frontend → aplicação Angular
+⬇
 database → scripts SQL
-docs 
+⬇
+docs → documentação do projeto
 
 
 ## Funcionalidades do Sistema
