@@ -35,20 +35,6 @@ Banco de Dados (MySQL)
 
 O frontend consome a API REST desenvolvida em Spring Boot, responsável pelas regras de negócio e comunicação com o banco de dados.
 
-## Estrutura do Projeto
-
-
-gymflow-app
-⬇
-backend → aplicação Spring Boot
-⬇
-frontend → aplicação Angular
-⬇
-database → scripts SQL
-⬇
-docs → documentação do projeto
-
-
 ## Funcionalidades do Sistema
 
 - Cadastro e gerenciamento de alunos
