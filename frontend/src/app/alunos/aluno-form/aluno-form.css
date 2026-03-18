@@ -1,0 +1,30 @@
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 24px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
