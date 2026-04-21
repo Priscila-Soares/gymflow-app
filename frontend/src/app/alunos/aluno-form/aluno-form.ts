@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -13,6 +13,9 @@ import { Aluno } from '../../models/aluno';
   styleUrl: './aluno-form.css'
 })
 export class AlunoFormComponent {
+
+@Output() alunoCadastrado = new EventEmitter<void>();
+
   aluno: Aluno = {
     nome: '',
     email: '',
@@ -36,7 +39,9 @@ export class AlunoFormComponent {
       error: (erro) => {
         console.error('Erro ao cadastrar aluno:', erro);
         alert('Erro ao cadastrar aluno.');
-      }
+      },
     });
+
+    this.alunoCadastrado.emit();
   }
 }

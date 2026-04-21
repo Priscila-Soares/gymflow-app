@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { AlunoFormComponent } from './alunos/aluno-form/aluno-form';
-import { AlunosListComponent } from './alunos/alunos-list/alunos-list';
+import { AlunosPageComponent } from './pages/alunos-page/alunos-page';
+import { ExerciciosPageComponent } from './pages/exercicios-page/exercicios-page';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'alunos', pathMatch: 'full' },
-  { path: 'alunos', component: AlunosListComponent },
-  { path: 'alunos/novo', component: AlunoFormComponent }
+  { path: 'alunos', component: AlunosPageComponent },
+  { path: 'exercicios', component: ExerciciosPageComponent }
 ];
