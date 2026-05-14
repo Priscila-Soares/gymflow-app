@@ -1,0 +1,36 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  background: rgba(20, 24, 45, 0.95);
+  border-bottom: 1px solid #2c315c;
+}
+
+.menu h1 {
+  margin: 0;
+  font-size: 44px;
+  color: #ffffff;
+}
+
+.links {
+  display: flex;
+  gap: 18px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #d8dcff;
+  font-weight: 700;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.links a:hover {
+  background: #252b55;
+  color: #9bbcff;
+}
+
+hr {
+  display: none;
+}

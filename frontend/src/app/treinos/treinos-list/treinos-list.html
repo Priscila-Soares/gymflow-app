@@ -1,0 +1,15 @@
+<h2>Lista de Treinos</h2>
+
+<ul>
+  <li *ngFor="let treino of treinos">
+    <strong>{{ treino.nome }}</strong>
+    <p>Aluno: {{ treino.aluno.nome }}</p>
+
+    <p>Exercícios:</p>
+    <ul>
+      <li *ngFor="let exercicio of treino.exercicios">
+        {{ exercicio.nome }} - {{ exercicio.grupoMuscular }}
+      </li>
+    </ul>
+  </li>
+</ul>
