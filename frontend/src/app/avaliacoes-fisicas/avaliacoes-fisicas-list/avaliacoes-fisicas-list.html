@@ -1,0 +1,17 @@
+<h2>Lista de Avaliações Físicas</h2>
+
+<ul *ngIf="avaliacoes.length > 0; else listaVazia">
+  <li *ngFor="let avaliacao of avaliacoes">
+    <strong>{{ avaliacao.aluno.nome }}</strong>
+
+    <p>Data da avaliação: {{ avaliacao.dataAvaliacao }}</p>
+    <p>Peso: {{ avaliacao.peso }} kg</p>
+    <p>Altura: {{ avaliacao.altura }} m</p>
+    <p>Percentual de gordura: {{ avaliacao.percentualGordura }}%</p>
+    <p>Observações: {{ avaliacao.observacoes }}</p>
+  </li>
+</ul>
+
+<ng-template #listaVazia>
+  <p>Nenhuma avaliação física cadastrada.</p>
+</ng-template>

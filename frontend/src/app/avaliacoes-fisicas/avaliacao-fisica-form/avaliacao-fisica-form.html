@@ -1,0 +1,79 @@
+<h2>Cadastrar Avaliação Física</h2>
+
+<form (ngSubmit)="salvar()">
+  <div>
+    <label for="aluno">Aluno</label>
+    <select
+      id="aluno"
+      name="aluno"
+      [(ngModel)]="avaliacao.alunoId"
+      required
+    >
+      <option [ngValue]="0">Selecione um aluno</option>
+      <option *ngFor="let aluno of alunos" [ngValue]="aluno.id">
+        {{ aluno.nome }}
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label for="dataAvaliacao">Data da avaliação</label>
+    <input
+      type="date"
+      id="dataAvaliacao"
+      name="dataAvaliacao"
+      [(ngModel)]="avaliacao.dataAvaliacao"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="peso">Peso</label>
+    <input
+      type="number"
+      id="peso"
+      name="peso"
+      step="0.01"
+      placeholder="Ex: 70.5"
+      [(ngModel)]="avaliacao.peso"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="altura">Altura</label>
+    <input
+      type="number"
+      id="altura"
+      name="altura"
+      step="0.01"
+      placeholder="Ex: 1.65"
+      [(ngModel)]="avaliacao.altura"
+      required
+    />
+  </div>
+
+  <div>
+    <label for="percentualGordura">Percentual de gordura</label>
+    <input
+      type="number"
+      id="percentualGordura"
+      name="percentualGordura"
+      step="0.01"
+      placeholder="Ex: 28.4"
+      [(ngModel)]="avaliacao.percentualGordura"
+    />
+  </div>
+
+  <div>
+    <label for="observacoes">Observações</label>
+    <textarea
+      id="observacoes"
+      name="observacoes"
+      placeholder="Ex: Avaliação inicial para acompanhamento da evolução física do aluno."
+      [(ngModel)]="avaliacao.observacoes"
+    ></textarea>
+  </div>
+
+  <button type="submit">Salvar</button>
+</form>
